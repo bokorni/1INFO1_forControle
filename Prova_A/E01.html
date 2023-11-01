@@ -9,11 +9,17 @@
     */
 
     //Entrada
-
-
-    //Processamento
-
-
-    //Saída
+    let numeros = [];   
+    const num = Number(prompt(`Insira um número inteiro.`).trim());
+    let soma = 0;
     
+    //Processamento
+    for (let i = 1; i <= num; i++) {
+         numeros.push(i);
+         soma += i;
+     
+    }
+    alert(`O resultado é : ${soma}`)
+    //Saída
+
 </script>

@@ -6,12 +6,20 @@
     Por exemplo, se o usuário informar a vogal "a", o resultado será 4, que é a quantidade de vezes que a vogal "a" aparece na frase.
     */
 
-    //Entrada
-
+    //Entrada 
+    const frase = "O rato roeu a roupa do rei de Roma";
+    const letra = prompt(`Insira uma vogal: `.trim().toLowerCase());
+  
+    let quant = 0;
 
     //Processamento
-
-
+    for (i = 0; i < frase.length; i++) {
+         if(frase[i] == letra){
+            quant++
+         }
+      
+    }
+    alert(`Esta foi a quantidade de vezes que a vogal apareceu na frase "O rato roeu a roupa do rei de Roma": ${quant}`);
     //Saída
 
 </script>
